@@ -1,0 +1,483 @@
+{
+  "_meta": {
+    "source": "https://www.x-kom.pl/",
+    "capturedAt": "2026-11-05",
+    "method": "Computed styles and visible elements in headed Chrome via Playwright CLI",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "Desktop homepage, default state; not an official brand specification",
+    "notes": [
+      "Token names and semantic grouping are inferred from observed usage.",
+      "Null means not verified on the inspected homepage.",
+      "Spacing uses an inferred 4px base with observed 2px and 6px exceptions.",
+      "The H1 wraps the logo; its 28px/700 is not a content heading specification.",
+      "Mobile, dark mode, hover, focus, validation errors and modal overlay styles were not audited."
+    ]
+  },
+  "colors": {
+    "brand": {
+      "primary": "#222222",
+      "accent": "#FA0064",
+      "error": null,
+      "success": "#007D00"
+    },
+    "background": {
+      "default": "#FFFFFF",
+      "light": "#F7F7F7",
+      "subtle": "#F2F2F2",
+      "success": "#EEF7ED",
+      "overlay": null
+    },
+    "text": {
+      "primary": "#1A1A1A",
+      "secondary": "#444444",
+      "muted": "#6E6E6E",
+      "onDark": "#FFFFFF",
+      "link": "#1C73E7"
+    },
+    "border": {
+      "default": "#CCCCCC",
+      "onDark": "rgba(255, 255, 255, 0.48)"
+    },
+    "logo": {
+      "--logo-color-1": "#8250fa",
+      "--logo-color-2": "#c382fa",
+      "--logo-color-3": "#be0064",
+      "--logo-color-4": "#0fd2ff",
+      "--logo-color-5": "#0082fa",
+      "--logo-color-6": "#fa0064"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "primary": "\"Instrument Sans\", sans-serif"
+    },
+    "fontWeights": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    },
+    "fontWeightEvidence": {
+      "observedVisibleText": [
+        400,
+        600
+      ],
+      "supportedByFontFace": "400 700",
+      "logoH1": 700
+    },
+    "fontSize": {
+      "xs": "10px",
+      "sm": "12px",
+      "label": "13px",
+      "base": "14px",
+      "md": "16px",
+      "lg": "18px",
+      "xl": "20px",
+      "xxl": "24px",
+      "section": "26px"
+    },
+    "lineHeight": {
+      "label": "16px",
+      "base": "20px",
+      "md": "22px",
+      "section": "32px"
+    },
+    "fontFace": {
+      "family": "Instrument Sans",
+      "style": "normal",
+      "weight": "400 700",
+      "display": "swap",
+      "variationSettings": "\"wdth\" 100",
+      "source": "https://assets.x-kom.pl/public/xkom/assets/fonts/InstrumentSans-VariableFont_wdth,wght.woff2",
+      "localFile": "assets/fonts/instrument-sans/InstrumentSans-VariableFont_wdth,wght.woff2"
+    }
+  },
+  "spacing": {
+    "1": "4px",
+    "2": "8px",
+    "3": "12px",
+    "4": "16px",
+    "5": "20px",
+    "6": "24px",
+    "8": "32px",
+    "12": "48px",
+    "half": "2px",
+    "1.5": "6px"
+  },
+  "borderRadius": {
+    "none": "0px",
+    "xs": "2px",
+    "sm": "4px",
+    "md": "8px",
+    "lg": "12px",
+    "circle": "100%"
+  },
+  "components": {
+    "button": {
+      "primary": {
+        "backgroundColor": "#222222",
+        "color": "#FFFFFF",
+        "padding": "12px 24px",
+        "borderRadius": "8px",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "22px",
+        "gap": "4px",
+        "border": "0px",
+        "boxShadow": "none"
+      },
+      "promoOutline": {
+        "backgroundColor": "transparent",
+        "color": "#FFFFFF",
+        "border": "1px solid rgba(255, 255, 255, 0.48)",
+        "padding": "5px 11px",
+        "borderRadius": "8px",
+        "fontSize": "13px",
+        "lineHeight": "16px"
+      }
+    },
+    "header": {
+      "backgroundColor": "#FFFFFF",
+      "height": "72px",
+      "padding": "0px",
+      "fontSize": "14px",
+      "logoWidth": "218px",
+      "logoHeight": "40px"
+    },
+    "nav": {
+      "color": "#1A1A1A",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "22px",
+      "itemPadding": "8px 12px",
+      "height": "58px"
+    },
+    "search": {
+      "backgroundColor": "#F2F2F2",
+      "height": "40px",
+      "borderRadius": "8px",
+      "inputPadding": "8px 0px 8px 20px",
+      "fontSize": "14px",
+      "lineHeight": "20px",
+      "buttonBackground": "#222222"
+    },
+    "card": {
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": "12px",
+      "padding": "24px",
+      "boxShadow": "none"
+    },
+    "promoBar": {
+      "backgroundColor": "#222222",
+      "color": "#FFFFFF",
+      "height": "40px",
+      "fontSize": "14px",
+      "lineHeight": "20px"
+    },
+    "badge": {
+      "discount": {
+        "backgroundColor": "#EEF7ED",
+        "color": "#007D00",
+        "borderRadius": "4px",
+        "padding": "2.5px 4px 1.5px",
+        "fontSize": "13px",
+        "lineHeight": "16px"
+      },
+      "neutral": {
+        "backgroundColor": "#F2F2F2",
+        "color": "#222222"
+      }
+    }
+  },
+  "evidence": {
+    "visibleBackgrounds": [
+      [
+        "rgb(255, 255, 255)",
+        328
+      ],
+      [
+        "rgb(110, 110, 110)",
+        48
+      ],
+      [
+        "rgb(238, 247, 237)",
+        44
+      ],
+      [
+        "rgb(242, 242, 242)",
+        15
+      ],
+      [
+        "rgb(247, 247, 247)",
+        12
+      ],
+      [
+        "rgba(255, 255, 255, 0)",
+        9
+      ],
+      [
+        "rgb(34, 34, 34)",
+        6
+      ],
+      [
+        "rgb(240, 248, 255)",
+        6
+      ],
+      [
+        "rgb(244, 240, 255)",
+        4
+      ],
+      [
+        "rgb(221, 221, 221)",
+        2
+      ],
+      [
+        "rgba(255, 255, 255, 0.72)",
+        2
+      ],
+      [
+        "rgb(204, 204, 204)",
+        1
+      ],
+      [
+        "rgb(0, 130, 250)",
+        1
+      ],
+      [
+        "rgba(0, 0, 0, 0.08)",
+        1
+      ],
+      [
+        "rgb(235, 235, 235)",
+        1
+      ],
+      [
+        "rgb(15, 210, 255)",
+        1
+      ]
+    ],
+    "visibleTextColors": [
+      [
+        "rgb(26, 26, 26)",
+        2789
+      ],
+      [
+        "rgb(28, 115, 231)",
+        691
+      ],
+      [
+        "rgb(110, 110, 110)",
+        367
+      ],
+      [
+        "rgb(68, 68, 68)",
+        324
+      ],
+      [
+        "rgba(0, 0, 0, 0)",
+        228
+      ],
+      [
+        "rgb(0, 125, 0)",
+        223
+      ],
+      [
+        "rgb(255, 255, 255)",
+        90
+      ],
+      [
+        "rgb(0, 0, 238)",
+        62
+      ],
+      [
+        "rgb(34, 34, 34)",
+        41
+      ],
+      [
+        "rgb(0, 0, 0)",
+        33
+      ],
+      [
+        "rgb(0, 112, 204)",
+        19
+      ],
+      [
+        "rgb(105, 48, 240)",
+        12
+      ],
+      [
+        "rgb(0, 130, 250)",
+        2
+      ],
+      [
+        "rgb(181, 0, 103)",
+        1
+      ],
+      [
+        "rgb(179, 178, 178)",
+        1
+      ]
+    ],
+    "visibleRadii": [
+      [
+        "0px",
+        4129
+      ],
+      [
+        "8px",
+        431
+      ],
+      [
+        "12px",
+        153
+      ],
+      [
+        "4px",
+        87
+      ],
+      [
+        "2px",
+        49
+      ],
+      [
+        "100%",
+        31
+      ],
+      [
+        "8px 0px 0px 8px",
+        1
+      ],
+      [
+        "0px 8px 8px 0px",
+        1
+      ],
+      [
+        "0px 12px 12px 0px",
+        1
+      ]
+    ],
+    "visibleFontSizes": [
+      [
+        "14px",
+        2886
+      ],
+      [
+        "16px",
+        962
+      ],
+      [
+        "13px",
+        346
+      ],
+      [
+        "12px",
+        215
+      ],
+      [
+        "18px",
+        183
+      ],
+      [
+        "10px",
+        160
+      ],
+      [
+        "20px",
+        80
+      ],
+      [
+        "26px",
+        19
+      ],
+      [
+        "28px",
+        13
+      ],
+      [
+        "24px",
+        9
+      ],
+      [
+        "13.3333px",
+        7
+      ],
+      [
+        "11px",
+        2
+      ],
+      [
+        "31px",
+        1
+      ]
+    ],
+    "visibleFontWeights": [
+      [
+        "400",
+        4634
+      ],
+      [
+        "600",
+        248
+      ],
+      [
+        "700",
+        1
+      ]
+    ],
+    "visibleGaps": [
+      [
+        "normal",
+        4686
+      ],
+      [
+        "4px",
+        110
+      ],
+      [
+        "8px",
+        37
+      ],
+      [
+        "16px",
+        22
+      ],
+      [
+        "2px",
+        20
+      ],
+      [
+        "32px",
+        3
+      ],
+      [
+        "0px",
+        1
+      ],
+      [
+        "14px",
+        1
+      ],
+      [
+        "12px",
+        1
+      ],
+      [
+        "6px",
+        1
+      ],
+      [
+        "48px",
+        1
+      ]
+    ],
+    "sectionHeading": {
+      "fontSize": "26px",
+      "fontWeight": "600",
+      "lineHeight": "32px"
+    },
+    "sectionCard": "24px"
+  }
+}
